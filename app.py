@@ -95,6 +95,12 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],title='Ral
 
 server = app.server
 
+# Google Analytics goes here 
+
+
+
+# Design top Navbar 
+
 # Design layout 
 
 app.layout = dbc.Container(
@@ -151,7 +157,7 @@ def streamTable(value):
         
         data=df_table_up.to_dict('records'),
         columns=[
-                {'name':'Zona Espectáculo', 'id':'name'},
+                {'name':'ZE', 'id':'name'},
                 {'name':'Troço', 'id':'stage'},
                 #{'name':'Lotação', 'id':'capacity','type':'numeric'},
                 {'name':'Status', 'id':'opstatus'},
