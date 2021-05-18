@@ -186,5 +186,5 @@ def streamTable(value):
 
     return newtable_up
 
-if __name__ == "__main__":
-    app.run_server(debug=True)
+if _name_ == "_main_":
+    app.run_server(host='0.0.0.0', debug=False)
